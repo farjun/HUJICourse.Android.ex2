@@ -24,6 +24,7 @@ public class AsyncClassFragment extends Fragment  implements View.OnClickListene
 
     public static final String TASK_PROGRESS_STATE = "TaskProgressState";
     public static final String BUTTONS_SAVE_KEY = "buttons";
+    public static final String DONE_MESSAGE = "Done";
     private BaseCounterTask task;
 
     //UI stuff
@@ -151,6 +152,7 @@ public class AsyncClassFragment extends Fragment  implements View.OnClickListene
     @Override
     public void onProgressUpdate(int progress) {
         if(progress == BaseCounterTask.MAX_PROGRESS_VALUE){
+            taskPrograssStatus.setText(DONE_MESSAGE);
             cancel.setEnabled(false);
             create.setEnabled(true);
             return;
