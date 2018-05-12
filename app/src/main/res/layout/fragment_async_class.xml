@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omer.hujicourseandroidex2.AsyncClassFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Created"
+        android:id="@+id/fragment_task_status"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/counter_text_view"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/counter_text_view"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_below="@+id/counter_text_view"
+        android:id="@+id/create_button"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_below="@+id/create_button"
+        android:id="@+id/start_button"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@+id/start_button"
+        android:id="@+id/cancel_button"
+        />
+
+
+
+</RelativeLayout>
